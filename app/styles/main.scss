@@ -1,0 +1,67 @@
+$icon-font-path: '../fonts/';
+
+
+$enable-flex:               true;
+
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 320px,
+  // Medium screen / tablet
+  md: 544px,
+  // Large screen / desktop
+  lg: 768px,
+  // Extra large screen / wide desktop
+  xl: 992px
+);
+
+$grid-gutter-width:    0;
+
+
+// bower:scss
+@import "bower_components/bootstrap/scss/bootstrap.scss";
+// endbower
+
+.row{
+  background-color: lightseagreen;
+}
+
+[class^='col-']{
+  display: flex;
+  height: 7rem;
+  border: 1px solid lightsteelblue;
+  background-color: aliceblue;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.v-center{
+  justify-content: center;
+}
+
+.first, .second, .third, .fourth, .fifth{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 30px;
+  width: 60px;  
+  background-color: #0056B8;
+  color: white;
+}
+
+.first, .third, .fifth{
+  //background-color: lightgreen;
+
+}
+
+.second, .fourth{
+  //background-color: lightskyblue;
+  align-self: center;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+}
